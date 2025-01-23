@@ -1,0 +1,20 @@
+[0.617s] Invoking command in '/home/parallels/ackerman/build/bridge2ros': PYTHONPATH=/home/parallels/ackerman/build/bridge2ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/parallels/ackerman/build/bridge2ros/build --no-deps symlink_data
+[0.861s] running develop
+[1.026s] running egg_info
+[1.028s] writing bridge2ros.egg-info/PKG-INFO
+[1.028s] writing dependency_links to bridge2ros.egg-info/dependency_links.txt
+[1.028s] writing entry points to bridge2ros.egg-info/entry_points.txt
+[1.028s] writing requirements to bridge2ros.egg-info/requires.txt
+[1.029s] writing top-level names to bridge2ros.egg-info/top_level.txt
+[1.031s] reading manifest file 'bridge2ros.egg-info/SOURCES.txt'
+[1.031s] writing manifest file 'bridge2ros.egg-info/SOURCES.txt'
+[1.033s] running build_ext
+[1.033s] Creating /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros.egg-link (link to .)
+[1.034s] Installing cbf script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+[1.034s] Installing shout script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+[1.034s] Installing test script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+[1.034s] Installing visual script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+[1.034s] 
+[1.034s] Installed /home/parallels/ackerman/build/bridge2ros
+[1.034s] running symlink_data
+[1.075s] Invoked command in '/home/parallels/ackerman/build/bridge2ros' returned '0': PYTHONPATH=/home/parallels/ackerman/build/bridge2ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/parallels/ackerman/build/bridge2ros/build --no-deps symlink_data

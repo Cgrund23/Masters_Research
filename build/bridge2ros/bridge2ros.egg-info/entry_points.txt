@@ -1,0 +1,6 @@
+[console_scripts]
+cbf = bridge2ros.cbf_Node:main
+shout = bridge2ros.shout:main
+test = bridge2ros.test:main
+visual = bridge2ros.visual_Node:main
+

@@ -1,0 +1,19 @@
+running develop
+running egg_info
+writing bridge2ros.egg-info/PKG-INFO
+writing dependency_links to bridge2ros.egg-info/dependency_links.txt
+writing entry points to bridge2ros.egg-info/entry_points.txt
+writing requirements to bridge2ros.egg-info/requires.txt
+writing top-level names to bridge2ros.egg-info/top_level.txt
+reading manifest file 'bridge2ros.egg-info/SOURCES.txt'
+writing manifest file 'bridge2ros.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros.egg-link (link to .)
+Installing shout script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+Installing test script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+
+Installed /home/parallels/ackerman/build/bridge2ros
+running symlink_data
+symbolically linking /home/parallels/ackerman/build/bridge2ros/launch/bridge_launch.launch.py -> /home/parallels/ackerman/install/bridge2ros/share/bridge2ros/launch
+symbolically linking /home/parallels/ackerman/build/bridge2ros/resource/bridge2ros -> /home/parallels/ackerman/install/bridge2ros/share/ament_index/resource_index/packages
+symbolically linking /home/parallels/ackerman/build/bridge2ros/package.xml -> /home/parallels/ackerman/install/bridge2ros/share/bridge2ros

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<robot name="Ackey">
+  <link name="chassis">
+    <inertial>
+      <origin xyz="-0.151427 0 0.175" rpy="0 0 0"/>
+      <mass value="1.14395"/>
+      <inertia ixx="0.126164" ixy="0" ixz="0" iyy="0.416519" iyz="0" izz="0.481014"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="2.01142 1 0.568726"/>
+      </geometry>
+      <material>
+        <color rgba="0.5 0.5 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="2.01142 1 0.568726"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Front Left Wheel -->
+  <link name="front_left_wheel">
+    <inertial>
+      <mass value="2"/>
+      <inertia ixx="0.145833" ixy="0" ixz="0" iyy="0.145833" iyz="0" izz="0.125"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.4"/>
+      </geometry>
+      <material>
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.2" radius="0.4"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joints -->
+  <joint name="front_left_wheel_steering_joint" type="revolute">
+    <parent link="chassis"/>
+    <child link="front_left_wheel"/>
+    <origin xyz="0.554283 0.625029 -0.025" rpy="-1.5707 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-0.6" upper="0.6" effort="25" velocity="1"/>
+  </joint>
+
+  <joint name="front_left_wheel_joint" type="revolute">
+    <parent link="front_left_wheel_steering_link"/>
+    <child link="front_left_wheel"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1e308" upper="1e308" effort="inf" velocity="inf"/>
+  </joint>
+
+  <!-- Rear Left Wheel -->
+  <link name="rear_left_wheel">
+    <inertial>
+      <mass value="2"/>
+      <inertia ixx="0.145833" ixy="0" ixz="0" iyy="0.145833" iyz="0" izz="0.125"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.4"/>
+      </geometry>
+      <material>
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.2" radius="0.4"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="rear_left_wheel_joint" type="revolute">
+    <parent link="chassis"/>
+    <child link="rear_left_wheel"/>
+    <origin xyz="-0.957138 0.625029 -0.025" rpy="-1.5707 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-1e308" upper="1e308" effort="inf" velocity="inf"/>
+  </joint>
+
+  <!-- Additional wheels and joints can be added similarly -->
+</robot>

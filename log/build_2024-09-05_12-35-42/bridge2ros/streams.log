@@ -1,0 +1,19 @@
+[0.557s] Invoking command in '/home/parallels/ackerman/build/bridge2ros': PYTHONPATH=/home/parallels/ackerman/build/bridge2ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/parallels/ackerman/build/bridge2ros/build --no-deps symlink_data
+[0.790s] running develop
+[0.941s] running egg_info
+[0.941s] writing bridge2ros.egg-info/PKG-INFO
+[0.941s] writing dependency_links to bridge2ros.egg-info/dependency_links.txt
+[0.942s] writing entry points to bridge2ros.egg-info/entry_points.txt
+[0.942s] writing requirements to bridge2ros.egg-info/requires.txt
+[0.942s] writing top-level names to bridge2ros.egg-info/top_level.txt
+[0.943s] reading manifest file 'bridge2ros.egg-info/SOURCES.txt'
+[0.944s] writing manifest file 'bridge2ros.egg-info/SOURCES.txt'
+[0.945s] running build_ext
+[0.945s] Creating /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros.egg-link (link to .)
+[0.946s] Installing cbf script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+[0.946s] Installing shout script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+[0.946s] Installing test script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+[0.946s] 
+[0.946s] Installed /home/parallels/ackerman/build/bridge2ros
+[0.946s] running symlink_data
+[0.971s] Invoked command in '/home/parallels/ackerman/build/bridge2ros' returned '0': PYTHONPATH=/home/parallels/ackerman/build/bridge2ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/parallels/ackerman/build/bridge2ros/build --no-deps symlink_data

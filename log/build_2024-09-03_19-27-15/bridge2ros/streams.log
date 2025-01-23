@@ -1,0 +1,40 @@
+[0.557s] Invoking command in '/home/parallels/ackerman/build/bridge2ros': PYTHONPATH=/home/parallels/ackerman/build/bridge2ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/parallels/ackerman/build/bridge2ros/build
+[0.785s] running develop
+[0.935s] Removing /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros.egg-link (link to .)
+[0.960s] Invoked command in '/home/parallels/ackerman/build/bridge2ros' returned '0': PYTHONPATH=/home/parallels/ackerman/build/bridge2ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/parallels/ackerman/build/bridge2ros/build
+[0.960s] Invoking command in '/home/parallels/ackerman/src/bridge2ros': PYTHONPATH=/home/parallels/ackerman/build/bridge2ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/bridge2ros build --build-base /home/parallels/ackerman/build/bridge2ros/build install --record /home/parallels/ackerman/build/bridge2ros/install.log --single-version-externally-managed install_data --force
+[1.175s] running egg_info
+[1.176s] writing ../../build/bridge2ros/bridge2ros.egg-info/PKG-INFO
+[1.176s] writing dependency_links to ../../build/bridge2ros/bridge2ros.egg-info/dependency_links.txt
+[1.176s] writing entry points to ../../build/bridge2ros/bridge2ros.egg-info/entry_points.txt
+[1.176s] writing requirements to ../../build/bridge2ros/bridge2ros.egg-info/requires.txt
+[1.176s] writing top-level names to ../../build/bridge2ros/bridge2ros.egg-info/top_level.txt
+[1.177s] reading manifest file '../../build/bridge2ros/bridge2ros.egg-info/SOURCES.txt'
+[1.178s] writing manifest file '../../build/bridge2ros/bridge2ros.egg-info/SOURCES.txt'
+[1.178s] running build
+[1.178s] running build_py
+[1.178s] copying bridge2ros/shout.py -> /home/parallels/ackerman/build/bridge2ros/build/lib/bridge2ros
+[1.179s] running install
+[1.179s] running install_lib
+[1.180s] creating /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros
+[1.180s] copying /home/parallels/ackerman/build/bridge2ros/build/lib/bridge2ros/CBF.py -> /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros
+[1.180s] copying /home/parallels/ackerman/build/bridge2ros/build/lib/bridge2ros/test.py -> /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros
+[1.180s] copying /home/parallels/ackerman/build/bridge2ros/build/lib/bridge2ros/cbf.py -> /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros
+[1.180s] copying /home/parallels/ackerman/build/bridge2ros/build/lib/bridge2ros/shout.py -> /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros
+[1.180s] copying /home/parallels/ackerman/build/bridge2ros/build/lib/bridge2ros/__init__.py -> /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros
+[1.180s] byte-compiling /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros/CBF.py to CBF.cpython-310.pyc
+[1.181s] byte-compiling /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros/test.py to test.cpython-310.pyc
+[1.181s] byte-compiling /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros/cbf.py to cbf.cpython-310.pyc
+[1.182s] byte-compiling /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros/shout.py to shout.cpython-310.pyc
+[1.182s] byte-compiling /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros/__init__.py to __init__.cpython-310.pyc
+[1.182s] running install_data
+[1.182s] copying launch/bridge_launch.launch.py -> /home/parallels/ackerman/install/bridge2ros/share/bridge2ros/launch
+[1.182s] copying resource/bridge2ros -> /home/parallels/ackerman/install/bridge2ros/share/ament_index/resource_index/packages
+[1.183s] copying package.xml -> /home/parallels/ackerman/install/bridge2ros/share/bridge2ros
+[1.183s] running install_egg_info
+[1.184s] Copying ../../build/bridge2ros/bridge2ros.egg-info to /home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages/bridge2ros-0.0.0-py3.10.egg-info
+[1.184s] running install_scripts
+[1.200s] Installing shout script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+[1.201s] Installing test script to /home/parallels/ackerman/install/bridge2ros/lib/bridge2ros
+[1.201s] writing list of installed files to '/home/parallels/ackerman/build/bridge2ros/install.log'
+[1.220s] Invoked command in '/home/parallels/ackerman/src/bridge2ros' returned '0': PYTHONPATH=/home/parallels/ackerman/build/bridge2ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/parallels/ackerman/install/bridge2ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/bridge2ros build --build-base /home/parallels/ackerman/build/bridge2ros/build install --record /home/parallels/ackerman/build/bridge2ros/install.log --single-version-externally-managed install_data --force
