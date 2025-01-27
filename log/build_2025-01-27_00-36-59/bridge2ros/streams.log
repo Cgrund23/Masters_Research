@@ -1,0 +1,3 @@
+[0.789s] Invoking command in '/Masters_Research/build/bridge2ros': PYTHONPATH=/Masters_Research/install/bridge2ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /Masters_Research/install/bridge2ros --uninstall --editable --build-directory /Masters_Research/build/bridge2ros/build
+[0.854s] /usr/bin/python3: can't open file 'setup.py': [Errno 2] No such file or directory
+[0.865s] Invoked command in '/Masters_Research/build/bridge2ros' returned '2': PYTHONPATH=/Masters_Research/install/bridge2ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /Masters_Research/install/bridge2ros --uninstall --editable --build-directory /Masters_Research/build/bridge2ros/build
