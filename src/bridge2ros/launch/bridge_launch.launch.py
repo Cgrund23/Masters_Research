@@ -10,8 +10,8 @@ from ament_index_python.packages import get_package_share_directory
 import os
 
 
-package_name = 'ros_gz_sim'
-launch_file_name = 'gz_server.launch.pi'
+package_name = 'ros_ign_sim'
+launch_file_name = 'ign_server.launch.pi'
 
 
 def generate_launch_description():
@@ -30,44 +30,44 @@ def generate_launch_description():
     with open(sdf_file_car, 'r') as infp:
         robot_desc = infp.read()
         
-    # pkg_ros_gz_sim_demos = get_package_share_directory('ros_gz_sim_demos')
-    # pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
+    # pkg_ros_ign_sim_demos = get_package_share_directory('ros_ign_sim_demos')
+    # pkg_ros_ign_sim = get_package_share_directory('ros_ign_sim')
 
     ld = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            [PathJoinSubstitution([FindPackageShare('ros_gz_sim'),
+            [PathJoinSubstitution([FindPackageShare('ros_ign_sim'),
                                    'launch',
-                                   'gz_sim.launch.py'])]),
+                                   'ign_sim.launch.py'])]),
         launch_arguments={
-            'gz_args': sdf_file_path
+            'ign_args': sdf_file_path
         }.items(),
     )
 
 
-    gz_server_description = IncludeLaunchDescription(
+    ign_server_description = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            [PathJoinSubstitution([FindPackageShare('ros_gz_sim'),
+            [PathJoinSubstitution([FindPackageShare('ros_ign_sim'),
                                    'launch',
-                                   'gz_sim.launch.py'])]),
-        launch_arguments=[('gz_args', sdf_file_path), ])
+                                   'ign_sim.launch.py'])]),
+        launch_arguments=[('ign_args', sdf_file_path), ])
 
     # Bridge
     bridge_lidar = Node(
-        package='ros_gz_bridge',
+        package='ros_ign_bridge',
         executable='parameter_bridge',
-        arguments=['lidar@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan',
-                   '/lidar/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked'],
+        arguments=['lidar@sensor_msgs/msg/LaserScan@ign.msgs.LaserScan',
+                   '/lidar/points@sensor_msgs/msg/PointCloud2@ign.msgs.PointCloudPacked'],
         output='screen'
         )
     bridge_cmd_vel = Node(
-        package='ros_gz_bridge',
+        package='ros_ign_bridge',
         executable='parameter_bridge',
         arguments=['/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist'],
         output='screen'
         )
     
     bridge_pose = Node(
-        package='ros_gz_bridge',
+        package='ros_ign_bridge',
         executable='parameter_bridge',
         arguments=['/model/Car/odometry@nav_msgs/msg/Odometry@ignition.msgs.Odometry'],
         output='screen'
@@ -114,7 +114,7 @@ def generate_launch_description():
     
     #Launch Gazebo with the SDF file
     #ld = LaunchDescription()
-    # ld.add_action(gz_server_description)
+    # ld.add_action(ign_server_description)
     # ld.add_action(bridge_lidar)
     # ld.add_action(bridge_cmd_vel)
     # #ld.add_action(dummy)
