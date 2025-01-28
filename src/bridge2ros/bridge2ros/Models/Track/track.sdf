@@ -1,2 +1,2 @@
 <?xml version='1.0' encoding='utf-8'?>
-<sdf version="1.6"><model name="track_model"><static>true</static><link name="track_link"><visual name="track_visual"><geometry><polyline><height>5.0</height><point>0 0 0</point><point>5 2 0</point><point>10 2 0</point></polyline></geometry></visual></link></model></sdf>
+<sdf version="1.7"><model name="track_model"><static>true</static><link name="track_link"><visual name="track_visual"><geometry><polyline><height>5.0</height><point>0 0 0</point><point>5 2 0</point><point>10 2 0</point></polyline></geometry></visual></link></model></sdf>

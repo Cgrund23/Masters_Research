@@ -1,4 +1,4 @@
-<sdf version='1.9'>
+<sdf version='1.7'>
 
 
     <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>

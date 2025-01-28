@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<sdf version="1.6">
+<sdf version="1.7">
 
   <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system' />
   <plugin filename="gz-sim-imu-system"
