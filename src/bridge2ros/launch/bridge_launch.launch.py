@@ -21,7 +21,7 @@ def generate_launch_description():
     # Get the directory of the current script
     current_dir = os.path.dirname(os.path.abspath(__file__))
     print(current_dir)
-    base_dir = os.path.join(*current_dir.split(os.sep)[:-5]) 
+    base_dir = os.path.join(*current_dir.split(os.sep)[:-3]) 
     print(base_dir)
     # Construct file paths relative to the current script's directory
     sdf_file_path = os.path.join('/',base_dir, 'src/bridge2ros/bridge2ros/Ackermanmulti.sdf')
