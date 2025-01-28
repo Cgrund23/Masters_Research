@@ -30,8 +30,8 @@ def generate_launch_description():
     with open(sdf_file_car, 'r') as infp:
         robot_desc = infp.read()
         
-    pkg_ros_gz_sim_demos = get_package_share_directory('ros_gz_sim_demos')
-    pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
+    # pkg_ros_gz_sim_demos = get_package_share_directory('ros_gz_sim_demos')
+    # pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
     ld = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
