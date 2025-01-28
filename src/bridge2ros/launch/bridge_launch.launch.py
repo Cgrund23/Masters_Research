@@ -18,10 +18,15 @@ def generate_launch_description():
     # Path to your SDF file
     # TODO make local path
 
-    sdf_file_path = '/home/parallels/ackerman/src/bridge2ros/bridge2ros/Ackermanmulti.sdf'
-    sdf_file_car = '/home/parallels/ackerman/src/bridge2ros/bridge2ros/Models/car.sdf'
-    rviz_file_path = '/home/parallels/ackerman/src/bridge2ros/bridge2ros/rviz/gpu_lidar_bridge.rviz'
-
+    # Get the directory of the current script
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    print(current_dir)
+    base_dir = os.path.join(*current_dir.split(os.sep)[:-5]) 
+    print(base_dir)
+    # Construct file paths relative to the current script's directory
+    sdf_file_path = os.path.join('/',base_dir, 'src/bridge2ros/bridge2ros/Ackermanmulti.sdf')
+    sdf_file_car = os.path.join('/',base_dir, 'src/bridge2ros/bridge2ros/Models/Car/model.sdf')
+    rviz_file_path = os.path.join('/',base_dir, 'src/bridge2ros/bridge2ros/rviz/gpu_lidar_bridge.rviz')
     with open(sdf_file_car, 'r') as infp:
         robot_desc = infp.read()
         

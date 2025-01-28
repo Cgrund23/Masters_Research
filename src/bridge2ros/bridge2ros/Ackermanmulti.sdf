@@ -17,20 +17,20 @@
 
     
     <include>
-      <uri>/home/parallels/ackerman/src/bridge2ros/bridge2ros/Models/car.sdf</uri>
+      <uri>/../Models/Car/model.sdf</uri>
       <name>Car</name>
       <pose>0 -0 1 0 0 0</pose>
     </include>
     
     <include>
-      <uri>/home/parallels/ackerman/src/bridge2ros/bridge2ros/Models/world.sdf</uri>
+      <uri>/../Models/world.sdf</uri>
     </include>
     
     <include>
     <!--
       <uri>/home/parallels/ackerman/src/bridge2ros/bridge2ros/Models/image.sdf</uri>
       -->
-      <uri>/home/parallels/ackerman/src/bridge2ros/bridge2ros/Models/maze.sdf</uri>
+      <uri>/../Models/Maze/model.sdf</uri>
     </include>
     
 
