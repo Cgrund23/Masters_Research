@@ -10,7 +10,7 @@ from ament_index_python.packages import get_package_share_directory
 import os
 
 
-package_name = 'ros_ign_sim'
+package_name = 'ros_ign_gazebo'
 launch_file_name = 'ign_server.launch.pi'
 
 
@@ -35,7 +35,7 @@ def generate_launch_description():
 
     ld = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            [PathJoinSubstitution([FindPackageShare('ros_ign_sim'),
+            [PathJoinSubstitution([FindPackageShare('ros_ign_gazebo'),
                                    'launch',
                                    'ign_sim.launch.py'])]),
         launch_arguments={
